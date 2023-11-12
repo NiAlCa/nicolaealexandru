@@ -1,0 +1,106 @@
+
+.SobreMi{
+    margin-top: 10%;
+    max-width: 300px;
+    .separator{
+        background-color: var(--font-color);
+        width: 100%;
+        height: 1px;
+    }
+    a {
+        color: inherit; /* Hereda el color del texto del elemento padre */
+        text-decoration: none; /* Elimina el subrayado */
+        font-style: normal; /* Evita que el enlace esté en cursiva, si es que estaba aplicado */
+        font-weight: normal; /* Evita que el enlace esté en negrita, si es que estaba aplicado */
+      }
+    
+
+    .SobreMiAvatar{
+        img{
+        width: 225px;
+        height:225px;
+        border-radius: 100%;
+        
+    }}
+    
+    .SobreMiName{
+        display: flex;
+        h2{
+        color: var(--font-color);
+        font-size: var(--font-size-xxl);
+    }}
+
+    .SobreMiInfo{
+        display: flex;
+        flex-direction: column;
+
+        .SobreMiInfoContainer{
+            margin-left: 2%;
+            display: flex;
+            color: var(--font-color);
+            font-size: var(--font-size-l);
+            margin-top: 2%;
+            .SobreMiInfoContainerText{
+                margin-left: 2%;
+            }
+        }
+    }
+
+    .SobreMiContact{
+        color: var(--font-color);
+        
+        font-size: var(--font-size-xxl);
+        margin-top: 2%;
+
+    .SobreMiContactContactsContainer{
+        cursor: pointer;
+        width: 80%;
+        margin-left: 2%;
+        color: var(--font-color);
+        display: flex;
+        border: 1px solid #272727;
+        font-size: var(--font-size-l);
+        background-color: #181818;
+        border-radius: 5px;
+        transition: filter 0.3s ease;
+        padding: 5px;
+        white-space: nowrap;
+        
+        .SobreMiContactContactsContainerIcon{
+            margin-right: 2%;
+            display: flex;
+            align-items: center;
+        }
+
+
+        &:hover{
+            filter: brightness(50%);
+        }
+
+        &:first-child{
+            margin-top: 2%;
+        }
+
+        &:last-child{
+            background-color: rgba(255, 0, 0, 0);
+            border: 1px solid rgba(0, 0, 0, 0);
+
+            margin-top: 0.5%;
+            width: 80%;
+
+            div{
+                width: 100%;
+                
+
+
+                .tercero{
+                    width: 100%;
+                }
+            }
+
+            
+        }
+    }}
+}
+
+

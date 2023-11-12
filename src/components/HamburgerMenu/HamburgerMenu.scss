@@ -1,0 +1,80 @@
+
+.HamburgerMenu {
+  display: none; 
+  align-items: center;
+  padding: 10px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.HamburgerMenu button {
+
+  all: unset;
+  color: var(--font-color);
+  font-size: var(--font-size-xxxxl);
+}
+
+
+
+.HamburgerMenu .open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.HamburgerMenu .open a {
+  all: unset;
+  font-size: var(--font-size-xxl);
+  color: var(--font-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.HamburgerMenu .open a.activo {
+  text-decoration: underline;
+}
+
+.HamburgerMenu .menuHamburguer,
+.HamburgerMenu .menuHamburguerMenu {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--font-color);
+
+}
+
+.HamburgerMenu .menuHamburguerMenu {
+  font-size: 40px;
+  gap: 20px;
+  height: 300px;
+  align-items: center;
+
+  a{
+    white-space: nowrap;
+  }
+  
+}
+
+
+
+.LogoNameContenedor h1:hover {
+  color: gray;
+  transform: scale(1.1);
+  filter: blur(0.1px);
+}
+
+@media screen and (max-width: 750px) {
+  .HamburgerMenu {
+    display: flex;
+  }
+}

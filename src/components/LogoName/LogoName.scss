@@ -1,0 +1,19 @@
+.LogoNameContenedor{
+  display: flex;
+  
+  h1 {
+  text-align: left;
+  font-size: var(--font-size-xxl);
+  line-height: 20px;
+  color: var(--font-color);
+  transition: all 0.3s ease;
+  position: relative;
+
+  &:hover {
+    color: gray;
+    transform: scale(1.1);
+    filter: blur(0.1px);
+  }
+  
+}
+}

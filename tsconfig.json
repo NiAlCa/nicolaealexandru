@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "public/oneko.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

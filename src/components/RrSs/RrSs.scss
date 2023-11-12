@@ -1,0 +1,21 @@
+.iconContenedor{
+    display: flex;
+
+    display: flex;
+  
+    a {
+    text-align: left;
+    font-size: var(--font-size-xxxxl);
+    line-height: 20px;
+    color: var(--font-color);
+    transition: all 0.3s ease;
+    position: relative;
+  
+    &:hover {
+      color: var(--color-prymary);
+      transform: scale(1.1);
+      filter: blur(0.1px);
+    }
+    
+  }
+  }
