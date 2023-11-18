@@ -1,0 +1,63 @@
+@import '../../styles/root.scss';
+
+
+.CurrentlyWork{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    background-color: var( --background-color);
+   max-width: 500px;
+   height: 100%;
+    
+    
+    
+
+    .CurrentlyWorkTittle{
+        font-size: var( --font-size-xxl);
+        display: flex;
+        flex: 1;
+        justify-content: baseline;
+        margin-top: 3%;
+        margin-left: 3%;
+        margin-bottom: 1%;
+        color: var(--color-title-info);
+        
+    }
+
+    .CurrentlyWorkContent{
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 3%;
+        display: flex;
+        flex: 1;
+        height: 100%;
+        background-color: var( --color-quaternary);
+        font-size: var( --font-size-m);
+        padding: 10px;
+
+        flex-wrap: wrap;
+
+        .CurrentlyWorkContentTittle{
+            display: flex;
+            
+            font-size: var(--font-size-xl);
+            justify-content: flex-start;
+            align-items: center;
+            flex: 1;
+            
+
+            img{
+                max-width: 90px;
+                max-width: 90px;
+            }
+        }
+
+        .CurrentlyWorkContentButton{
+         margin: 10px auto 0px auto;
+        }
+
+    }
+
+    
+}

@@ -1,11 +1,16 @@
+@import '../../styles/mixins.scss';
 
 .SobreMi{
-    margin-top: 10%;
-    max-width: 300px;
+    
+   
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     .separator{
         background-color: var(--font-color);
         width: 100%;
         height: 1px;
+        display: flex;
     }
     a {
         color: inherit; /* Hereda el color del texto del elemento padre */
@@ -17,14 +22,16 @@
 
     .SobreMiAvatar{
         img{
-        width: 225px;
-        height:225px;
+        max-width: 225px;
+        max-height:225px;
         border-radius: 100%;
         
     }}
     
     .SobreMiName{
         display: flex;
+        flex-grow: 1;
+        max-height: 70px;
         h2{
         color: var(--font-color);
         font-size: var(--font-size-xxl);
@@ -33,10 +40,12 @@
     .SobreMiInfo{
         display: flex;
         flex-direction: column;
+   
 
         .SobreMiInfoContainer{
             margin-left: 2%;
             display: flex;
+            flex: 1;
             color: var(--font-color);
             font-size: var(--font-size-l);
             margin-top: 2%;
@@ -58,6 +67,7 @@
         margin-left: 2%;
         color: var(--font-color);
         display: flex;
+        flex: 1;
         border: 1px solid #272727;
         font-size: var(--font-size-l);
         background-color: #181818;
@@ -104,3 +114,66 @@
 }
 
 
+@include respond-to(medium) {
+
+   
+
+    .SobreMi{
+        width: 100%;
+        flex-direction: column;
+
+        .SobreMiAvatar{
+            align-self: center;
+        }
+
+        .separator{
+            display: none;
+        }
+
+        .SobreMiContact{
+        .SobreMiContactContactsContainer{
+            width: 100%;
+            margin: 0px;
+            
+          .tercero{
+            width: 50%;
+          }
+
+        }
+        }
+    }
+
+    .SobreMiName{
+        align-items: flex-start;
+        
+    }
+
+    
+
+    
+
+
+   }
+
+   @include respond-to(medium) {
+
+   
+
+    .SobreMi{
+        width: 100%;
+        flex-direction: column;
+
+        .separator{
+            display: block;
+        }
+
+    }
+
+    
+
+    
+
+
+   }
+   
+   

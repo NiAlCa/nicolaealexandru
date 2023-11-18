@@ -30,7 +30,7 @@ const HamburgerMenu = () => {
               <Link to="/" className={`link ${isHomeActive ? "activo" : ""}`}>
                 <Boton
                   text="Home"
-                  onClick={() => console.log(isHomeActive)}
+                  onClick={toggleMenu}
                   className=""
                 />
               </Link>
@@ -40,7 +40,7 @@ const HamburgerMenu = () => {
               >
                 <Boton
                   text="Portfolio & Contact"
-                  onClick={() => console.log(isHomeActive)}
+                  onClick={toggleMenu}
                   className=""
                 />
               </Link>
@@ -50,7 +50,7 @@ const HamburgerMenu = () => {
               >
                 <Boton
                   text="Blog"
-                  onClick={() => console.log(isHomeActive)}
+                  onClick={toggleMenu}
                   className=""
                 />
               </Link>

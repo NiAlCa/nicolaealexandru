@@ -1,14 +1,15 @@
+import { Info } from "../../components/Info/Info";
 import SobreMi from "../../components/SobreMi/SobreMi";
 
 
 export function Portafolio() {
   return (
 
-      <div className="principal">
-        <div className="section">
+      <div className="principalRow">
+        <div className="sectionRow">
             <SobreMi/>
-      
-      </div>
+            <Info/>
+            </div>
       </div>
 
   );

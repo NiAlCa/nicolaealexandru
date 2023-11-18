@@ -1,6 +1,9 @@
 
 @import 'root.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import './mixins.scss';
+
+
 
 *{
     margin: 0px;
@@ -17,22 +20,28 @@ background-size: 20px 20px;
 background-position: center center;
 background-attachment: fixed;
 
+color: var(--font-color);
+
+overflow-x: hidden;
+
 
 
 
 }
 
+
 .Principal{
 
   
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 1200px;
-        height: 100%;
-        margin: auto;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
 
-      
+  
 }
 
 .section{
@@ -42,5 +51,72 @@ background-attachment: fixed;
     height: 100%;
 
     max-width: 1200px;
+
+
+
 }
 
+
+
+.PrincipalRow{
+
+  
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+
+  
+}
+
+
+.sectionRow{
+    display: flex;
+    flex: 1;
+    gap: 1%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .SobreMi{
+        align-self: flex-start;
+    }
+}
+
+
+@include respond-to(large){
+    body{
+        padding: 2%;
+        overflow-x: hidden;
+    }
+
+    
+    
+}
+
+
+
+
+@include respond-to(medium) {
+
+ 
+    
+   
+body{
+    overflow-x: hidden;
+}
+
+   .sectionRow{
+    display: flex;
+   align-items: center;
+   
+    flex-direction: column;
+    width: 100%;
+
+}
+
+   
+  }
+  

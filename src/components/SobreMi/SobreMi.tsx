@@ -3,6 +3,7 @@ import "./SobreMi.scss";
 import useSWR from "swr";
 import curriculum from '../../assets/curriculum.pdf';
 
+
 import {
   IoLocationSharp,
   IoBook,
@@ -104,7 +105,7 @@ export default function SobreMi() {
             </div>
 
             <div className="SobreMiContactContactsContainerText">
-              <p>Nicolae Alexandru Casiean</p>
+              <p>Nicolae Alexandru</p>
             </div>
           </div>
 

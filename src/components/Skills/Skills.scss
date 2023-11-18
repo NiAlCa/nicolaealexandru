@@ -1,0 +1,80 @@
+@import '../../styles/root.scss';
+
+@import '../../styles/mixins.scss';
+
+
+.Skills{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    max-width: 500px;
+    background-color: var( --background-color);
+    height: 100%;
+    flex-grow: 1;
+
+    
+    
+
+    .SkillsTittle{
+        font-size: var( --font-size-xxxl);
+        display: flex;
+        justify-content: baseline;
+        margin-top: 3%;
+        margin-left: 3%;
+        margin-bottom: 1%;
+        flex: 1;
+        max-height: 30px;
+        color: var(--color-title-info);
+    }
+
+    .SkillsContent{
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 3%;
+        display: flex;
+       background-color: var( --color-quaternary);
+        font-size: var( --font-size-xl);
+        padding: 10px;
+        flex: 1;
+        max-height: 572px;
+
+        flex-wrap: wrap;
+
+        :hover{
+         background-color: gray;  
+         
+         
+        }
+
+
+        .SkillItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            flex-basis: 33%;
+
+            
+            
+        }
+        
+
+    }
+}
+
+
+
+@include respond-to(medium) {
+    
+   
+
+.Skills{
+    .SkillsTittle{
+        max-height: 50px;
+    }}
+
+    
+   }
+   
+

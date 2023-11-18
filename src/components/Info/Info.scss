@@ -1,0 +1,56 @@
+@import '../../styles/mixins.scss';
+
+.Info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+
+  
+    .InfoWidgets{
+        display: flex;
+      
+ 
+    }
+
+    .InfoWidgetsBottom{
+        display: flex;
+        width: 100%;
+
+        
+    }
+}
+
+.InfoContenetor{
+    width: 100%;
+    &:nth-child(1) { // This selects the container of LastSong
+        flex: 1; // This means it will grow to fill 1 part of the available space
+    }
+
+    &:nth-child(2) { // This selects the container of RandomThings
+        flex: 3; // This will grow to fill 3 parts of the available space
+    }
+
+}
+
+
+
+@include respond-to(small) {
+    
+   
+.InfoWidgets{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.InfoWidgetsBottom{
+    flex-direction: column;
+}
+
+ 
+    
+   }
+   

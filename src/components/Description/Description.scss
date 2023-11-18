@@ -1,0 +1,16 @@
+@import '../../styles/root.scss';
+
+
+.Description{
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+.DescriptionTittle{
+    font-size: var( --font-size-xxl);
+    flex: 1;
+    color: var(--color-title-info);
+}
+
+}
