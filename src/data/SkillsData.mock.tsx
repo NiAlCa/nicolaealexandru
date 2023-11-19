@@ -1,6 +1,6 @@
 import { 
     SiHtml5, SiCss3, SiJavascript, SiReact, SiNodedotjs, 
-    SiTypescript, SiSass,SiWordpress , SiSap ,
+    SiTypescript, SiSass,SiWordpress  , SiTailwindcss 
 } from "react-icons/si";
 
 export const SkillsData = [
@@ -37,7 +37,7 @@ export const SkillsData = [
         text: "Wordpress",
     },
     {
-        icon: <SiSap />,
-        text: "SAP",
+        icon: <SiTailwindcss  />,
+        text: "Tailwind",
     },
 ];
