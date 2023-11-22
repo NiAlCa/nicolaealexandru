@@ -3,7 +3,7 @@
 
 .LastSong{
     display: flex;
-    flex: 1;
+
     flex-direction: column;
     border:  1px solid var(--border-color);
     max-width: 500px;
@@ -17,7 +17,7 @@
     .LastSongTittle{
         font-size: var( --font-size-xxxl);
         display: flex;
-        flex: 1;
+
         justify-content: baseline;
         margin-top: 3%;
         margin-left: 3%;
@@ -44,11 +44,11 @@
             text-decoration: none; 
             color: var(--font-color);
             width: 100%;
-            flex: 1;
+
 
             img{
-                max-width: 75px;
-                max-width: 75px;
+                width: 75px;
+                height: 75px;
             }
 
             .LastSongContentInfo{
