@@ -3,8 +3,8 @@ export const CurrentlyWorkData = [
     {
        
         image: "/src/assets/CurrentlyWork/logo.png",
-        tittle: "Apuntomotor",
-        text: 'Refactoring of the website that I had previously created in my early days with WordPress',
-        url: 'https://github.com/NiAlCa/com-apuntomotor',
+        tittle: "Improving logistics",
+        text: 'Computer Technician, problem analysis, and installation and repair of various computing devices such as computers, printers, access points, and the creation of small scripts to enhance office productivity.',
+        url: 'https://improlog.com/',
     },
 ];

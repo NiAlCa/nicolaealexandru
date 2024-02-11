@@ -16,7 +16,7 @@ export function CurrentlyWork() {
 
         <div className="CurrentlyWorkContent">
           <div className="CurrentlyWorkContentTittle">
-            <img src={CurrentlyWorkData[0].image} />
+            <img alt="Actual nicolae alexandru work" src={CurrentlyWorkData[0].image} />
 
             <h6>{CurrentlyWorkData[0].tittle}</h6>
           </div>
