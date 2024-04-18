@@ -34,7 +34,7 @@ export const NavBar = () => {
           onClick={() => {}}
         /></Link>
 
-
+{/* */}
         <Link to={'/blog'}>
         <Boton
           className={`primero ${isBlogActive ? "activo" : ""}`}
