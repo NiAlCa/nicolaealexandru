@@ -1,0 +1,23 @@
+.post {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+
+  background-color: var(--color-quaternary);
+
+  border: 1px solid var(--color-prymary);
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  :hover {
+    background-color: var(--color-tertiary);
+
+    
+    transition: background-color 0.3s;
+    
+    border-radius: 10px;
+  }
+}

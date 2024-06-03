@@ -1,6 +1,6 @@
 import { 
     SiHtml5, SiCss3, SiJavascript, SiReact, SiNodedotjs, 
-    SiTypescript, SiSass,SiWordpress  , SiTailwindcss, SiBootstrap, SiPhp, 
+    SiTypescript, SiSass,SiWordpress  , SiMicrosoftsqlserver, SiBootstrap, SiPhp, 
     SiCreatereactapp, 
 } from "react-icons/si";
 
@@ -19,8 +19,12 @@ export const SkillsData = [
         text: "Javascript",
     },
     {
-        icon: <SiReact />,
-        text: "React",
+        icon: <SiMicrosoftsqlserver  />,
+        text: "SQL Server",
+    },
+    {
+        icon: <SiPhp />,
+        text: "PHP",
     },
     {
         icon: <SiNodedotjs />,
@@ -31,30 +35,27 @@ export const SkillsData = [
         text: "TypeScript",
     },
     {
-        icon: <SiSass />,
-        text: "SASS",
+        icon: <SiReact />,
+        text: "React",
+    },
+    {
+        icon: <SiCreatereactapp />,
+        text: "React Native"
     },
     {
         icon: <SiWordpress />,
         text: "Wordpress",
     },
     {
-        icon: <SiTailwindcss  />,
-        text: "Tailwind",
-    },
-    {
         icon: <SiBootstrap />,
         text: "Bootstrap",
     },
     {
-        icon: <SiPhp />,
-        text: "PHP",
+        icon: <SiSass />,
+        text: "SASS",
     },
-    {
-        icon: <SiCreatereactapp />,
-        text: "React Native"
 
 
-    },
+
     
 ];

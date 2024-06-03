@@ -5,7 +5,7 @@ import './styles/App.scss';
 import Dev from './pages/Dev';
 import { HomePage } from './pages/home/Home';
 import { Portafolio } from './pages/portfolio/Portfolio';
-import { Blog } from './pages/blog/Blog';
+import Blog from './pages/blog/Blog';
 
 
 
@@ -34,7 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="portfolio" element={<Portafolio />} />
-        <Route path="blog" element={<Blog />} />
+        <Route path="blog/*" element={<Blog />} />
         <Route path="dev" element={<Dev />} />
       </Routes>
     </div>

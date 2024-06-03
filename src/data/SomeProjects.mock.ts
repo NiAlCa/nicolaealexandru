@@ -3,7 +3,7 @@ export const CurrentlyWorkData = [
     image: "/src/assets/SomeProjects/coda.png",
     tittle: "Coda",
     text: "Website focused on musical NFTs for which I have been fully responsible for the front-end development.",
-    url: "https://www.coda.to/",
+    url: "https://coda.to/",
     id: "Work",
   },
   {
@@ -25,21 +25,21 @@ export const CurrentlyWorkData = [
     tittle: "Ping monitor",
     text: "PingMonitor is a sleek desktop application designed to track and display real-time ping responses from various locations, ensuring seamless network connectivity and operational efficiency.",
     url: "https://github.com/NiAlCa/PingElectron",
-    id: "Project",
+    id: "Work",
   },
   {
     image: "/src/assets/SomeProjects/pdf.png",
     tittle: "PDF Organizer",
     text: "The PDF Processor Efficiently manage your documents by selecting keywords and directories. Boost productivity today with our user-friendly tool",
     url: "https://github.com/NiAlCa/Order-pdfs",
-    id: "Project",
+    id: "Work",
   },
   {
     image: "/src/assets/SomeProjects/mercadona.png",
     tittle: "MTR Mercadona to excel",
     text: "Executable script that reads MTR PDFs from Mercadona and generates an Excel table to organize the warehouse, saving time and avoiding human error.",
     url: "https://github.com/NiAlCa/mercadonaMTR-pdf-script",
-    id: "Project",
+    id: "Work",
   },
   {
     image: "/src/assets/SomeProjects/openai.png",

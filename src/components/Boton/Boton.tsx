@@ -1,6 +1,6 @@
 import React from "react";
 import "./Boton.scss";
-import { IoSend } from "react-icons/io5";
+import { IoSend, IoArrowBackCircleOutline } from "react-icons/io5";
 
 interface BotonProps {
   text: string;
@@ -12,7 +12,10 @@ const Boton: React.FC<BotonProps> = ({ text, className, onClick }) => {
   return (
     <div>
       <button className={className} onClick={onClick}>
-        {className === 'tercero mail' && (<IoSend/>)}
+        {className === "tercero mail" && <IoSend />}
+        {className === "atras" && (
+          <IoArrowBackCircleOutline className="icon" />
+        )}{" "}
         <p>{text}</p>
       </button>
     </div>
