@@ -5,10 +5,12 @@ import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import { LogoName } from "../LogoName/LogoName";
 import { RrSs } from "../RrSs/RrSs";
 import "./NavBar.scss";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate  } from "react-router-dom";
 
 export const NavBar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+
 
   const isHomeActive = location.pathname === "/";
   const isPortfolioActive = location.pathname === "/portfolio";
@@ -16,8 +18,10 @@ export const NavBar = () => {
 
   return (
     <div className="NavBar">
-      <div className="NavBarLogoName">
+      <div className="NavBarLogoName" onClick={() => navigate('/')}>
+ 
         <LogoName />
+  
       </div>
       <div className="NavBarBotones">
         <Link to={'/'}>
@@ -33,8 +37,6 @@ export const NavBar = () => {
           text="Portfolio & Contact"
           onClick={() => {}}
         /></Link>
-
-{/* */}
         <Link to={'/blog'}>
         <Boton
           className={`primero ${isBlogActive ? "activo" : ""}`}

@@ -12,11 +12,12 @@ const Boton: React.FC<BotonProps> = ({ text, className, onClick }) => {
   return (
     <div>
       <button className={className} onClick={onClick}>
-        {className === "tercero mail" && <IoSend />}
+      
         {className === "atras" && (
           <IoArrowBackCircleOutline className="icon" />
         )}{" "}
         <p>{text}</p>
+        {className === "terceromail" && <IoSend />}
       </button>
     </div>
   );

@@ -133,7 +133,7 @@ export default function SobreMi() {
           <div className="SobreMiContactContactsContainer ">
           <Boton
         text = "Send me an email!"
-        className="tercero mail"
+        className="terceromail"
         onClick={openEmail}
         />
         </div>
